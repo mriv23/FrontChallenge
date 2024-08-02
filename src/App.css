@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #639605;
+  --text-color: #555555;
+  --shadow-color: rgba(0, 0, 0, 0.2); /* Color de la sombra */
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html{
+  font-family: 'Open Sans', sans-serif;
+
+}
+.container{
+  height: 896px;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #DBDBDB;
+  min-width: 380px;
+  width: 100vw;
+  height:62px;
+}
+.tabs{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.tabList{
+  justify-content: space-between;
+  min-width: 433px;
+  height: 15px;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+.tab {
+  border: none;
+  background-color: #fff;
+  width: 130;
+  height: 100%;
+}
+.tarea{
+  max-width: 380px;
+  height: 93px;
+  top: 197px;
+  left: 17px;
+  gap: 0px;
+  opacity: 0px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius:5px;
+  box-shadow: 3px 3px 6px var(--shadow-color); /* Borde sombreado */
+  background-color: #fff;
+}
+.btn-delete{
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  margin-left: 5px;
+  position: absolute;
+  right: 5px;
+  margin-right:5px;
+  
+}
+.panels{
+  background-color: #F4F4F4;
+  margin-top: 65px;
+
+}
+.todoList{
+  margin-top: 20px;
+}
+.heading{
+  text-align: left;
+  font-size: 20px;
+  line-height: 27.24px;
+  color:#555555;
+  margin-left: 10px;
+  position: relative;
+  top: 25px;
+}
+.btn-modal{
+  margin-top: 20px;
+}
+.card-todo{
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 380px;
+  position: relative;
+  
+}
+.todoTitle{
+  text-align: left;
+}
+
+
+
+
