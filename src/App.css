@@ -4,39 +4,51 @@
   --primary-color: #639605;
   --text-color: #555555;
   --shadow-color: rgba(0, 0, 0, 0.2); /* Color de la sombra */
-
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
 }
-html{
-  font-family: 'Open Sans', sans-serif;
 
+html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #dbdbdb;
 }
-.container{
+
+.container {
   height: 896px;
   max-width: 100%;
   overflow-x: hidden;
   padding: 0;
   margin: 0 auto;
 }
-.header{
+
+.header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   border-bottom: 1px solid #DBDBDB;
   min-width: 380px;
   width: 100vw;
-  height:62px;
+  height: 62px;
+  background-color: #FFFF;
 }
-.tabs{
+
+.tabs {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  background-color: #FFFF;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  border-bottom: 4px solid #e0e0e0;
 }
-.tabList{
+
+.tabList {
   justify-content: space-between;
   min-width: 433px;
   height: 15px;
@@ -45,13 +57,36 @@ html{
   position: relative;
   top: 30px;
 }
+
 .tab {
   border: none;
   background-color: #fff;
   width: 130;
   height: 100%;
+  padding: 10px 0;
+  margin: 0;
+  height: auto;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #555555;
+  cursor: pointer;
+  position: relative;
 }
-.tarea{
+
+.tab:hover {
+  color: #639605;
+}
+
+.active {
+  color: #639605;
+  border-bottom: 4px solid #639605;
+  border-radius: 3px 3px 0px 0px;
+  padding-bottom: 2px;
+}
+
+.tarea {
   max-width: 380px;
   height: 93px;
   top: 197px;
@@ -61,52 +96,98 @@ html{
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius:5px;
+  border-radius: 5px;
   box-shadow: 3px 3px 6px var(--shadow-color); /* Borde sombreado */
   background-color: #fff;
 }
-.btn-delete{
+
+.btn-delete {
   border: none;
   background-color: white;
   font-size: 20px;
   margin-left: 5px;
   position: absolute;
   right: 5px;
-  margin-right:5px;
-  
+  margin-right: 5px;
 }
-.panels{
+
+.panels {
   background-color: #F4F4F4;
   margin-top: 65px;
-
 }
-.todoList{
+
+.todoList {
   margin-top: 20px;
 }
-.heading{
+
+.heading {
   text-align: left;
   font-size: 20px;
   line-height: 27.24px;
-  color:#555555;
+  color: #555555;
   margin-left: 10px;
   position: relative;
   top: 25px;
 }
-.btn-modal{
+
+.btn-modal {
   margin-top: 20px;
 }
-.card-todo{
+
+.card-todo {
   align-items: center;
   justify-content: center;
   height: 100%;
   max-width: 380px;
   position: relative;
-  
 }
-.todoTitle{
+
+.todoTitle {
   text-align: left;
 }
 
+.btnAddTodo {
+  min-width: 380px;
+  margin-top: 30px;
+  height: 46px;
+  border-radius: 5px;
+  border: none;
+  background-color: #639605;
+  color: #fff;
+}
 
+.formDatos {
+  background-color: #fff;
+  width: 380px;
+  height: 393px;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
 
+.formDatos input {
+  width: 346px;
+  height: 38px;
+  border-radius: 3px;
+  border: 1px solid #C9C9C9;
+  color: #B3B3B3;
+  margin-bottom: 20px;
+  padding: 10px;
+}
 
+.formDatos button {
+  position: absolute;
+  bottom: 5%;
+}
+
+.formDatos label {
+  align-self: flex-start;
+  margin-bottom: 8px;
+  margin-left: 2%;
+  font-size: 14px;
+  line-height: 19.07px;
+  font-weight: 400;
+}
