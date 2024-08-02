@@ -17,8 +17,7 @@ Esta aplicación es una TODO list desarrollada como parte de una entrevista téc
 
 
 
-SSH
-- git clone git@github.com:mriv23/FrontChallenge.git
+- git clone https://github.com/mriv23/FrontChallenge.git
 - cd tu-repositorio
 - npm install
 - npm run dev
